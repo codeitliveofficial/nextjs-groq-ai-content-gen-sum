@@ -3,27 +3,25 @@
 const Page = () => {
   return (
     <div className="flex flex-col h-screen max-h-[calc(100vh-64px)] bg-black text-white">
-      <h1 className="text-xl font-bold text-center p-4">
-        Blog Content Generator
-      </h1>
+      <h1 className="text-xl font-bold text-center p-4">Content Summarizer</h1>
 
       <div className="flex flex-1 min-h-0 p-4 gap-4">
         {/* LEFT: Input Section */}
         <div className="w-1/2 bg-gray-800 rounded-lg p-4 flex flex-col gap-4">
-          <p className="text-lg">Topic / Notes</p>
+          <p className="text-lg">Enter Content to Summarize</p>
           <textarea
             className="border-2 border-gray-600 bg-gray-900 rounded-lg p-2 text-lg grow outline-none focus:border-blue-500"
             placeholder="Enter your topic"
           />
           <button className="bg-blue-500 hover:bg-blue-600 disabled:bg-gray-600 text-white px-4 py-2 rounded-lg w-1/4 transition">
-            Generate
+            Summarize
           </button>
         </div>
 
         {/* RIGHT: Output Section */}
         <div className="w-1/2 bg-gray-800 rounded-lg p-4 flex flex-col gap-4">
           <div className="flex justify-between">
-            <p className="text-lg">Generated Content</p>
+            <p className="text-lg">Generated Summary</p>
             <div className="flex gap-2">
               <button className="hover:scale-110 transition bg-green-500 text-white px-2 py-1 rounded-xs">
                 Copy

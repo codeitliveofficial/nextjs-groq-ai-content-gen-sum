@@ -23,4 +23,45 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  /* For Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+}
+
+/* For WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  transition: background-color 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    scrollbar-color: #555 transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #555;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #777;
+  }
 }
