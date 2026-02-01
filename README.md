@@ -51,6 +51,9 @@ npm install
 
 3. Set up environment variables:
 
+Go to :- https://groq.com/ 
+Create API key and paste it in env.local file. (Free, No credit card required)
+
 ```bash
 # Create .env.local file
 GROQ_API_KEY=your_groq_api_key_here
